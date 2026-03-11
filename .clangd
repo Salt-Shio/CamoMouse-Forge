@@ -1,0 +1,9 @@
+CompileFlags:
+  Add: [
+    "-Id:/Reversing_Engineer/CamoMouse-Forge/Firmware/User",
+    "-Id:/Reversing_Engineer/CamoMouse-Forge/Firmware/SRC/Core",
+    "-Id:/Reversing_Engineer/CamoMouse-Forge/Firmware/SRC/Peripheral/inc",
+    "-Id:/Reversing_Engineer/CamoMouse-Forge/Firmware/SRC/Debug",
+    "-DCH32V30x_D8C",
+    "-DUSE_STDPERIPH_DRIVER"
+  ]
