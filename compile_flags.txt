@@ -1,3 +1,4 @@
+--target=riscv32
 -IFirmware/CamoMouse
 -IFirmware/User
 -IFirmware/SRC/Core
@@ -5,3 +6,5 @@
 -IFirmware/SRC/Debug
 -DCH32V30x_D8C
 -DUSE_STDPERIPH_DRIVER
+-Wno-attributes
+-Wno-implicit-function-declaration
