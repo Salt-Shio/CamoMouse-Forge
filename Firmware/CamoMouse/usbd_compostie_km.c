@@ -237,8 +237,7 @@ void USART2_Receive_Handle( void )
  *
  * @return  none
  */
-void KB_Scan_Init( void )
-{
+void KB_Scan_Init( void ) {
     GPIO_InitTypeDef GPIO_InitStructure = { 0 };
 
     /* Enable GPIOB clock */
@@ -258,8 +257,7 @@ void KB_Scan_Init( void )
  *
  * @return  none
  */
-void KB_Sleep_Wakeup_Cfg( void )
-{
+void KB_Sleep_Wakeup_Cfg( void ) {
     EXTI_InitTypeDef EXTI_InitStructure = { 0 };
 
     RCC_APB2PeriphClockCmd( RCC_APB2Periph_AFIO, ENABLE );
@@ -302,25 +300,21 @@ void KB_Sleep_Wakeup_Cfg( void )
  *
  * @return  none
  */
-void KB_Scan( void )
-{
+void KB_Scan( void ) {
     static uint16_t scan_cnt = 0;
     static uint16_t scan_result = 0;
 
     scan_cnt++;
-    if( ( scan_cnt % 10 ) == 0 )
-    {
+    if( ( scan_cnt % 10 ) == 0 ) {
         scan_cnt = 0;
 
         /* Determine whether the two scan results are consistent */
-        if( scan_result == ( GPIO_ReadInputData( GPIOB ) & 0xF000 ) )
-        {
+        if( scan_result == ( GPIO_ReadInputData( GPIOB ) & 0xF000 ) ) {
             KB_Scan_Done = 1;
             KB_Scan_Result = scan_result;
         }
     }
-    else if( ( scan_cnt % 5 ) == 0 )
-    {
+    else if( ( scan_cnt % 5 ) == 0 ) {
         /* Save the first scan result */
         scan_result = ( GPIO_ReadInputData( GPIOB ) & 0xF000 );
     }
@@ -333,8 +327,7 @@ void KB_Scan( void )
  *
  * @return  none
  */
-void KB_Scan_Handle( void )
-{
+void KB_Scan_Handle( void ) {
     uint8_t i, j;
     uint8_t status;
     static uint8_t key_cnt = 0x00;

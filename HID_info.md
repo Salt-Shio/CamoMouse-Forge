@@ -1,5 +1,7 @@
 # HID Information
 
+## Device Descriptor
+
 <details>
     <summary>Device Descriptor</summary>
 
@@ -918,3 +920,37 @@ Serial                   : "8D8B346B5455"
 
 </details>
 
+
+## HID Data Pack
+
+### Mouse Data Pack
+
+滑鼠的滑動，左右鍵點擊，中鍵點擊，滾輪的滑動
+
+```
+HID Data: 00 00 0000 0000 00 00
+    .......0 = Button: 1 (primary/trigger): UP (左鍵 UP: 0, DOWN: 1)
+    ......0. = Button: 2 (secondary): UP (右鍵 UP: 0, DOWN: 1)
+    .....0.. = Button: 3 (tertiary): UP (中鍵 UP: 0, DOWN: 1)
+    ....0... = Button: 4: UP (側鍵後 UP: 0, DOWN: 1)
+    ...0.... = Button: 5: UP (側鍵前 UP: 0, DOWN: 1)
+    ..0..... = Button: 6: UP
+    .0...... = Button: 7: UP
+    0....... = Button: 8: UP 
+    .......0 = Button: 9: UP
+    ......0. = Button: 10: UP
+    .....0.. = Button: 11: UP
+    ....0... = Button: 12: UP
+    ...0.... = Button: 13: UP
+    ..0..... = Button: 14: UP
+    .0...... = Button: 15: UP
+    0....... = Button: 16: UP
+    00000000  00000000 = X Axis: 0 (RIGHT: -1, LEFT: 1)
+    00000000  00000000 = Y Axis: 0 (UP: -1, DOWN: 1)
+    00000000 = Usage: Wheel: 0 (UP: 1, DOWN: -1)
+    00000000 = Usage: AC Pan: 0
+```
+
+### Keyboard Data Pack
+
+這裡就是 側鍵 以及控制 DPI 的功能
