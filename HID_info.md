@@ -953,4 +953,42 @@ HID Data: 00 00 0000 0000 00 00
 
 ### Keyboard Data Pack
 
-這裡就是 側鍵 以及控制 DPI 的功能
+![alt text](Image/Device/2.jpg)
+
+這裡就是控制 DPI 的功能，DPI 的按鈕控制有很有趣的行為
+
+1. 圖中紅色圈起來的部分
+```
+Array: ff0f1001000000000000000000000000000000
+    1111 1111 = Usage: No controls asserted
+    0000 1111 = Usage: No controls asserted
+    0001 0000 = Usage: No controls asserted
+    0000 0001 = Usage: No controls asserted (每次點擊側鍵改變 DPI，這裡都會改變 0, 1, 2, 3)
+    0000 0000 = Usage: Vendor (0xff00, 0x0002)
+    0000 0000 = Usage: Vendor (0xff00, 0x0002)
+    0000 0000 = Usage: Vendor (0xff00, 0x0002)
+    0000 0000 = Usage: Vendor (0xff00, 0x0002)
+    0000 0000 = Usage: Vendor (0xff00, 0x0002)
+    0000 0000 = Usage: Vendor (0xff00, 0x0002)
+    0000 0000 = Usage: Vendor (0xff00, 0x0002)
+    0000 0000 = Usage: Vendor (0xff00, 0x0002)
+    0000 0000 = Usage: Vendor (0xff00, 0x0002)
+    0000 0000 = Usage: Vendor (0xff00, 0x0002)
+    0000 0000 = Usage: Vendor (0xff00, 0x0002)
+    0000 0000 = Usage: Vendor (0xff00, 0x0002)
+    0000 0000 = Usage: Vendor (0xff00, 0x0002)
+    0000 0000 = Usage: Vendor (0xff00, 0x0002)
+    0000 0000 = Usage: Vendor (0xff00, 0x0002)
+```
+
+可以猜測: ff 0f 10 XX 000000000000000000000000000000
+XX 就是 DPI 的速度階段，實際上會抓到 (00, 01, 02, 03)
+注意: XX 是**要改變成**的值，而不是當前的值
+
+2. 圖中黃色圈起來的部分
+
+跟 1. 有類似的概念，他原本的設計是讓使用者可以面對需要精細移動的情況下，可以使用的按鈕
+
+按下後會讓 DPI 瞬間降到最低，放開後會恢復到原本的 DPI
+按下: ff 0f 10 00 000000000000000000000000000000
+放開: ff 0f 10 XX 000000000000000000000000000000 (XX 是原本的 DPI 階段)
