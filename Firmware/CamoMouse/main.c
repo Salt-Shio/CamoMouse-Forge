@@ -35,7 +35,7 @@
 /*******************************************************************************/
 /* Header Files */
 #include "ch32v30x_usbfs_device.h"
-#include "usbd_composite_km.h"
+#include "g402_pack_builder.h"
 
 /*********************************************************************
  * @fn      main
@@ -51,50 +51,14 @@ int main( void )
     NVIC_PriorityGroupConfig( NVIC_PriorityGroup_2 );
 	Delay_Init( );
 	USART_Printf_Init( 115200 );
-		
-	printf( "SystemClk:%d\r\n", SystemCoreClock );
-	printf( "ChipID:%08x\r\n", DBGMCU_GetCHIPID() );
-	printf("USBFS Composite KM Device Test\r\n");
-
-	/* Initialize USART2 for receiving the specified keyboard data */
-	USART2_Init( 115200 );
-	printf( "USART2 Init OK!\r\n" );
-
-	/* Initialize GPIO for keyboard scan */
-	KB_Scan_Init( );
-	KB_Sleep_Wakeup_Cfg( );
-	printf( "KB Scan Init OK!\r\n" );
-
-	/* Initialize GPIO for mouse scan */
-	MS_Scan_Init( );
-	MS_Sleep_Wakeup_Cfg( );
-	printf( "MS Scan Init OK!\r\n" );
-
-	/* Initialize timer for Keyboard and mouse scan timing */
-	TIM3_Init( 1, SystemCoreClock / 10000 - 1 );
-	printf( "TIM3 Init OK!\r\n" );
-
-	/* Initialize USBFS interface to communicate with the host  */
+	
 	USBFS_RCC_Init( );
 	USBFS_Device_Init( ENABLE );
-	USB_Sleep_Wakeup_CFG( );
 	
 	while( 1 ){
-		if( USBFS_DevEnumStatus )
-		{
-			KB_Scan_Handle(  );
-			KB_LED_Handle( );
-			USART2_Receive_Handle( );
-
-			// MS_Scan_Handle( );
-
+		if( USBFS_DevEnumStatus ) {
+			Send_Mouse_Data_Pack(BUTTON_ALLUP, 1, 1);
 			Delay_Ms(1000); 
-
-			uint8_t my_mouse_data[4] = {0x00, 20, 0x00, 0x00}; 
-
-			uint8_t status = USBFS_Endp_DataUp( DEF_UEP2, my_mouse_data, sizeof(my_mouse_data), DEF_UEP_CPY_LOAD );
-			// if( status == 0 )
-			printf("Mouse moved right! Status: %d\r\n", status);
 		}
 	}
 }

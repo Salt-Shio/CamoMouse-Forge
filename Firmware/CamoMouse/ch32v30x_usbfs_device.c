@@ -14,7 +14,9 @@
 /*******************************************************************************/
 /* Header File */
 #include "ch32v30x_usbfs_device.h"
-#include "usbd_composite_km.h"
+// #include "usbd_composite_km.h"
+
+uint8_t KB_LED_Cur_Status = 0;
 
 /*******************************************************************************/
 /* Variable Definition */
@@ -523,13 +525,13 @@ void USBFS_IRQHandler( void )
                                 case USB_DESCR_TYP_REPORT:
                                     if( USBFS_SetupReqIndex == 0x00 )
                                     {
-                                        pUSBFS_Descr = KeyRepDesc;
-                                        len = DEF_USBD_REPORT_DESC_LEN_KB;
+                                        pUSBFS_Descr = MouseRepDesc;
+                                        len = DEF_USBD_REPORT_DESC_LEN_MS;
                                     }
                                     else if( USBFS_SetupReqIndex == 0x01 )
                                     {
-                                        pUSBFS_Descr = MouseRepDesc;
-                                        len = DEF_USBD_REPORT_DESC_LEN_MS;
+                                        pUSBFS_Descr = KeyRepDesc;
+                                        len = DEF_USBD_REPORT_DESC_LEN_KB;
                                     }
                                     else
                                     {
@@ -827,7 +829,7 @@ void USBFS_IRQHandler( void )
             if( USBFS_DevSleepStatus == 0x03 )
             {
                 /* Handling usb sleep here */
-                MCU_Sleep_Wakeup_Operate( );
+                // MCU_Sleep_Wakeup_Operate( );
             }
         }
         else

@@ -46,7 +46,7 @@ const uint8_t MyCfgDescr[] = {
     0x3B, 0x00, // wTotalLength
     0x02,       // bNumInterfaces
     0x01,       // bConfigurationValue
-    0x00,       // iConfiguration
+    0x04,       // iConfiguration
     0xA0,       // bmAttributes: Bus Powered; Remote Wakeup
     0x96,       // MaxPower: 100mA
 
@@ -92,7 +92,7 @@ const uint8_t MyCfgDescr[] = {
     /* HID Descriptor (Keyboard ?) */
     0x09,       // bLength
     0x21,       // bDescriptorType
-    0x10, 0x01, // bcdHID
+    0x11, 0x01, // bcdHID
     0x00,       // bCountryCode
     0x01,       // bNumDescriptors
     0x22,       // bDescriptorType
