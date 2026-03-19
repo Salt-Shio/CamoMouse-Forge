@@ -1,0 +1,1027 @@
+No.     Time           Source                Destination           Protocol Length Info
+     25 17.990450      host                  3.3.0                 USB      36     GET DESCRIPTOR Request DEVICE
+
+Frame 25: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x00
+    bDescriptorType: DEVICE (0x01)
+    Language Id: no language specified (0x0000)
+    wLength: 18
+
+No.     Time           Source                Destination           Protocol Length Info
+     26 18.018568      3.3.0                 host                  USB      46     GET DESCRIPTOR Response DEVICE
+
+Frame 26: Packet, 46 bytes on wire (368 bits), 46 bytes captured (368 bits) on interface \\.\USBPcap3, id 0
+USB URB
+DEVICE DESCRIPTOR
+    bLength: 18
+    bDescriptorType: 0x01 (DEVICE)
+    bcdUSB: 0x0200
+    bDeviceClass: Device (0x00)
+    bDeviceSubClass: 0
+    bDeviceProtocol: 0 (Use class code info from Interface Descriptors)
+    bMaxPacketSize0: 64
+    idVendor: Logitech, Inc. (0x046d)
+    idProduct: G402 Gaming Mouse (0xc07e)
+    bcdDevice: 0x9003
+    iManufacturer: 1
+    iProduct: 2
+    iSerialNumber: 3
+    bNumConfigurations: 1
+
+No.     Time           Source                Destination           Protocol Length Info
+     27 18.018603      host                  3.3.0                 USB      36     GET DESCRIPTOR Request CONFIGURATION
+
+Frame 27: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x00
+    bDescriptorType: CONFIGURATION (0x02)
+    Language Id: no language specified (0x0000)
+    wLength: 9
+
+No.     Time           Source                Destination           Protocol Length Info
+     28 18.021585      3.3.0                 host                  USB      37     GET DESCRIPTOR Response CONFIGURATION
+
+Frame 28: Packet, 37 bytes on wire (296 bits), 37 bytes captured (296 bits) on interface \\.\USBPcap3, id 0
+USB URB
+CONFIGURATION DESCRIPTOR
+    bLength: 9
+    bDescriptorType: 0x02 (CONFIGURATION)
+    wTotalLength: 59
+    bNumInterfaces: 2
+    bConfigurationValue: 1
+    iConfiguration: 4
+    Configuration bmAttributes: 0xa0  NOT SELF-POWERED  REMOTE-WAKEUP
+    bMaxPower: 150  (300mA)
+
+No.     Time           Source                Destination           Protocol Length Info
+     29 18.021603      host                  3.3.0                 USB      36     GET DESCRIPTOR Request CONFIGURATION
+
+Frame 29: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x00
+    bDescriptorType: CONFIGURATION (0x02)
+    Language Id: no language specified (0x0000)
+    wLength: 59
+
+No.     Time           Source                Destination           Protocol Length Info
+     30 18.024558      3.3.0                 host                  USB      87     GET DESCRIPTOR Response CONFIGURATION
+
+Frame 30: Packet, 87 bytes on wire (696 bits), 87 bytes captured (696 bits) on interface \\.\USBPcap3, id 0
+USB URB
+CONFIGURATION DESCRIPTOR
+    bLength: 9
+    bDescriptorType: 0x02 (CONFIGURATION)
+    wTotalLength: 59
+    bNumInterfaces: 2
+    bConfigurationValue: 1
+    iConfiguration: 4
+    Configuration bmAttributes: 0xa0  NOT SELF-POWERED  REMOTE-WAKEUP
+    bMaxPower: 150  (300mA)
+INTERFACE DESCRIPTOR (0.0): class HID
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 0
+    bAlternateSetting: 0
+    bNumEndpoints: 1
+    bInterfaceClass: HID (0x03)
+    bInterfaceSubClass: Boot Interface (0x01)
+    bInterfaceProtocol: Mouse (0x02)
+    iInterface: 0
+HID DESCRIPTOR
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x81  IN  Endpoint:1
+    bmAttributes: 0x03
+    wMaxPacketSize: 8
+    bInterval: 1
+INTERFACE DESCRIPTOR (1.0): class HID
+    bLength: 9
+    bDescriptorType: 0x04 (INTERFACE)
+    bInterfaceNumber: 1
+    bAlternateSetting: 0
+    bNumEndpoints: 1
+    bInterfaceClass: HID (0x03)
+    bInterfaceSubClass: No Subclass (0x00)
+    bInterfaceProtocol: 0x00
+    iInterface: 0
+HID DESCRIPTOR
+ENDPOINT DESCRIPTOR
+    bLength: 7
+    bDescriptorType: 0x05 (ENDPOINT)
+    bEndpointAddress: 0x82  IN  Endpoint:2
+    bmAttributes: 0x03
+    wMaxPacketSize: 20
+    bInterval: 1
+
+No.     Time           Source                Destination           Protocol Length Info
+     31 18.025480      host                  3.3.0                 USB      36     SET CONFIGURATION Request
+
+Frame 31: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x00
+    bRequest: SET CONFIGURATION (9)
+    bConfigurationValue: 1
+    wIndex: 0 (0x0000)
+    wLength: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     32 18.029163      3.3.0                 host                  USB      28     SET CONFIGURATION Response
+
+Frame 32: Packet, 28 bytes on wire (224 bits), 28 bytes captured (224 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     33 18.029202      host                  3.3.0                 USB      27     Unknown type 7f
+
+Frame 33: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     34 18.029204      3.3.0                 host                  USB      27     Unknown type 7f
+
+Frame 34: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     35 18.029207      host                  3.3.0                 USB      27     Unknown type 7f
+
+Frame 35: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     36 18.029208      3.3.0                 host                  USB      27     Unknown type 7f
+
+Frame 36: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     37 18.029720      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 37: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 4
+
+No.     Time           Source                Destination           Protocol Length Info
+     38 18.031338      3.3.0                 host                  USB      32     GET DESCRIPTOR Response STRING
+
+Frame 38: Packet, 32 bytes on wire (256 bits), 32 bytes captured (256 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 36
+    bDescriptorType: 0x03 (STRING)
+    bString: G
+
+No.     Time           Source                Destination           Protocol Length Info
+     39 18.031359      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 39: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 36
+
+No.     Time           Source                Destination           Protocol Length Info
+     40 18.034293      3.3.0                 host                  USB      64     GET DESCRIPTOR Response STRING
+
+Frame 40: Packet, 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 36
+    bDescriptorType: 0x03 (STRING)
+    bString: Gaming Mouse G402
+
+No.     Time           Source                Destination           Protocol Length Info
+     41 18.035200      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 41: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 4
+
+No.     Time           Source                Destination           Protocol Length Info
+     42 18.037290      3.3.0                 host                  USB      32     GET DESCRIPTOR Response STRING
+
+Frame 42: Packet, 32 bytes on wire (256 bits), 32 bytes captured (256 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 36
+    bDescriptorType: 0x03 (STRING)
+    bString: G
+
+No.     Time           Source                Destination           Protocol Length Info
+     43 18.037314      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 43: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 36
+
+No.     Time           Source                Destination           Protocol Length Info
+     44 18.040293      3.3.0                 host                  USB      64     GET DESCRIPTOR Response STRING
+
+Frame 44: Packet, 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 36
+    bDescriptorType: 0x03 (STRING)
+    bString: Gaming Mouse G402
+
+No.     Time           Source                Destination           Protocol Length Info
+     45 18.041321      host                  3.3.0                 USBHID   36     SET_IDLE Request
+
+Frame 45: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+    bRequest: SET_IDLE (0x0a)
+    wValue: 0x0000
+    wIndex: 0
+    wLength: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     46 18.043558      3.3.0                 host                  USBHID   28     SET_IDLE Response
+
+Frame 46: Packet, 28 bytes on wire (224 bits), 28 bytes captured (224 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     47 18.043635      host                  3.3.0                 USBHID   36     GET DESCRIPTOR Request HID Report
+
+Frame 47: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x81
+    bDescriptorIndex: 0x00
+    bDescriptorType: HID Report (0x22)
+    wInterfaceNumber: 0
+    wDescriptorLength: 131
+
+No.     Time           Source                Destination           Protocol Length Info
+     48 18.047296      3.3.0                 host                  USBHID   95     GET DESCRIPTOR Response HID Report
+
+Frame 48: Packet, 95 bytes on wire (760 bits), 95 bytes captured (760 bits) on interface \\.\USBPcap3, id 0
+USB URB
+HID Report
+
+No.     Time           Source                Destination           Protocol Length Info
+     49 18.048176      host                  3.3.1                 USB      27     URB_INTERRUPT in
+
+Frame 49: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     50 18.048192      host                  3.3.1                 USB      27     URB_INTERRUPT in
+
+Frame 50: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     51 18.049107      host                  3.3.0                 USBHID   36     SET_IDLE Request
+
+Frame 51: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+    bRequest: SET_IDLE (0x0a)
+    wValue: 0x0000
+    wIndex: 1
+    wLength: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+     52 18.052566      3.3.0                 host                  USBHID   28     SET_IDLE Response
+
+Frame 52: Packet, 28 bytes on wire (224 bits), 28 bytes captured (224 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     53 18.052664      host                  3.3.0                 USBHID   36     GET DESCRIPTOR Request HID Report
+
+Frame 53: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x81
+    bDescriptorIndex: 0x00
+    bDescriptorType: HID Report (0x22)
+    wInterfaceNumber: 1
+    wDescriptorLength: 215
+
+No.     Time           Source                Destination           Protocol Length Info
+     54 18.057299      3.3.0                 host                  USBHID   179    GET DESCRIPTOR Response HID Report
+
+Frame 54: Packet, 179 bytes on wire (1432 bits), 179 bytes captured (1432 bits) on interface \\.\USBPcap3, id 0
+USB URB
+HID Report
+
+No.     Time           Source                Destination           Protocol Length Info
+     55 18.058173      host                  3.3.2                 USB      27     URB_INTERRUPT in
+
+Frame 55: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     56 18.058194      host                  3.3.2                 USB      27     URB_INTERRUPT in
+
+Frame 56: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     57 18.065055      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 57: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x03
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 129
+
+No.     Time           Source                Destination           Protocol Length Info
+     58 18.067306      3.3.0                 host                  USB      54     GET DESCRIPTOR Response STRING
+
+Frame 58: Packet, 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 26
+    bDescriptorType: 0x03 (STRING)
+    bString: 8D8B346B5455
+
+No.     Time           Source                Destination           Protocol Length Info
+     59 18.067343      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 59: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x01
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 129
+
+No.     Time           Source                Destination           Protocol Length Info
+     60 18.070307      3.3.0                 host                  USB      46     GET DESCRIPTOR Response STRING
+
+Frame 60: Packet, 46 bytes on wire (368 bits), 46 bytes captured (368 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 18
+    bDescriptorType: 0x03 (STRING)
+    bString: Logitech
+
+No.     Time           Source                Destination           Protocol Length Info
+     61 18.070348      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 61: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 129
+
+No.     Time           Source                Destination           Protocol Length Info
+     62 18.073305      3.3.0                 host                  USB      64     GET DESCRIPTOR Response STRING
+
+Frame 62: Packet, 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 36
+    bDescriptorType: 0x03 (STRING)
+    bString: Gaming Mouse G402
+
+No.     Time           Source                Destination           Protocol Length Info
+     63 18.076013      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 63: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 254
+
+No.     Time           Source                Destination           Protocol Length Info
+     64 18.076873      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 64: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x03
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 129
+
+No.     Time           Source                Destination           Protocol Length Info
+     65 18.077309      3.3.0                 host                  USB      64     GET DESCRIPTOR Response STRING
+
+Frame 65: Packet, 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 36
+    bDescriptorType: 0x03 (STRING)
+    bString: Gaming Mouse G402
+
+No.     Time           Source                Destination           Protocol Length Info
+     66 18.080271      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 66: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 254
+
+No.     Time           Source                Destination           Protocol Length Info
+     67 18.080309      3.3.0                 host                  USB      54     GET DESCRIPTOR Response STRING
+
+Frame 67: Packet, 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 26
+    bDescriptorType: 0x03 (STRING)
+    bString: 8D8B346B5455
+
+No.     Time           Source                Destination           Protocol Length Info
+     68 18.080333      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 68: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x01
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 129
+
+No.     Time           Source                Destination           Protocol Length Info
+     69 18.083306      3.3.0                 host                  USB      64     GET DESCRIPTOR Response STRING
+
+Frame 69: Packet, 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 36
+    bDescriptorType: 0x03 (STRING)
+    bString: Gaming Mouse G402
+
+No.     Time           Source                Destination           Protocol Length Info
+     70 18.085557      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 70: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 254
+
+No.     Time           Source                Destination           Protocol Length Info
+     71 18.086309      3.3.0                 host                  USB      46     GET DESCRIPTOR Response STRING
+
+Frame 71: Packet, 46 bytes on wire (368 bits), 46 bytes captured (368 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 18
+    bDescriptorType: 0x03 (STRING)
+    bString: Logitech
+
+No.     Time           Source                Destination           Protocol Length Info
+     72 18.086341      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 72: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 129
+
+No.     Time           Source                Destination           Protocol Length Info
+     73 18.089310      3.3.0                 host                  USB      64     GET DESCRIPTOR Response STRING
+
+Frame 73: Packet, 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 36
+    bDescriptorType: 0x03 (STRING)
+    bString: Gaming Mouse G402
+
+No.     Time           Source                Destination           Protocol Length Info
+     74 18.090130      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 74: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 254
+
+No.     Time           Source                Destination           Protocol Length Info
+     75 18.092309      3.3.0                 host                  USB      64     GET DESCRIPTOR Response STRING
+
+Frame 75: Packet, 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 36
+    bDescriptorType: 0x03 (STRING)
+    bString: Gaming Mouse G402
+
+No.     Time           Source                Destination           Protocol Length Info
+     76 18.092553      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 76: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x03
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 129
+
+No.     Time           Source                Destination           Protocol Length Info
+     77 18.095308      3.3.0                 host                  USB      64     GET DESCRIPTOR Response STRING
+
+Frame 77: Packet, 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 36
+    bDescriptorType: 0x03 (STRING)
+    bString: Gaming Mouse G402
+
+No.     Time           Source                Destination           Protocol Length Info
+     78 18.096084      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 78: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 254
+
+No.     Time           Source                Destination           Protocol Length Info
+     79 18.098302      3.3.0                 host                  USB      54     GET DESCRIPTOR Response STRING
+
+Frame 79: Packet, 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 26
+    bDescriptorType: 0x03 (STRING)
+    bString: 8D8B346B5455
+
+No.     Time           Source                Destination           Protocol Length Info
+     80 18.098338      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 80: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x01
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 129
+
+No.     Time           Source                Destination           Protocol Length Info
+     81 18.101318      3.3.0                 host                  USB      64     GET DESCRIPTOR Response STRING
+
+Frame 81: Packet, 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 36
+    bDescriptorType: 0x03 (STRING)
+    bString: Gaming Mouse G402
+
+No.     Time           Source                Destination           Protocol Length Info
+     82 18.101587      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 82: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 254
+
+No.     Time           Source                Destination           Protocol Length Info
+     83 18.104306      3.3.0                 host                  USB      46     GET DESCRIPTOR Response STRING
+
+Frame 83: Packet, 46 bytes on wire (368 bits), 46 bytes captured (368 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 18
+    bDescriptorType: 0x03 (STRING)
+    bString: Logitech
+
+No.     Time           Source                Destination           Protocol Length Info
+     84 18.104332      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 84: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 129
+
+No.     Time           Source                Destination           Protocol Length Info
+     85 18.107305      3.3.0                 host                  USB      64     GET DESCRIPTOR Response STRING
+
+Frame 85: Packet, 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 36
+    bDescriptorType: 0x03 (STRING)
+    bString: Gaming Mouse G402
+
+No.     Time           Source                Destination           Protocol Length Info
+     86 18.110557      3.3.0                 host                  USB      64     GET DESCRIPTOR Response STRING
+
+Frame 86: Packet, 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 36
+    bDescriptorType: 0x03 (STRING)
+    bString: Gaming Mouse G402
+
+No.     Time           Source                Destination           Protocol Length Info
+     87 18.110810      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 87: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x03
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 129
+
+No.     Time           Source                Destination           Protocol Length Info
+     88 18.111164      host                  3.3.0                 USBHID   43     SET_REPORT Request
+
+Frame 88: Packet, 43 bytes on wire (344 bits), 43 bytes captured (344 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0210
+    wIndex: 1
+    wLength: 7
+    Data Fragment: 10ff001e000000
+
+No.     Time           Source                Destination           Protocol Length Info
+     89 18.113307      3.3.0                 host                  USB      54     GET DESCRIPTOR Response STRING
+
+Frame 89: Packet, 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 26
+    bDescriptorType: 0x03 (STRING)
+    bString: 8D8B346B5455
+
+No.     Time           Source                Destination           Protocol Length Info
+     90 18.113333      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 90: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x01
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 129
+
+No.     Time           Source                Destination           Protocol Length Info
+     91 18.116308      3.3.0                 host                  USBHID   28     SET_REPORT Response
+
+Frame 91: Packet, 28 bytes on wire (224 bits), 28 bytes captured (224 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     92 18.119297      3.3.2                 host                  USB      47     URB_INTERRUPT in
+
+Frame 92: Packet, 47 bytes on wire (376 bits), 47 bytes captured (376 bits) on interface \\.\USBPcap3, id 0
+USB URB
+HID Data: 11ff001e04020000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+     93 18.119316      host                  3.3.2                 USB      27     URB_INTERRUPT in
+
+Frame 93: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     94 18.119325      3.3.0                 host                  USB      46     GET DESCRIPTOR Response STRING
+
+Frame 94: Packet, 46 bytes on wire (368 bits), 46 bytes captured (368 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 18
+    bDescriptorType: 0x03 (STRING)
+    bString: Logitech
+
+No.     Time           Source                Destination           Protocol Length Info
+     95 18.119352      host                  3.3.0                 USB      36     GET DESCRIPTOR Request STRING
+
+Frame 95: Packet, 36 bytes on wire (288 bits), 36 bytes captured (288 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x80
+    bRequest: GET DESCRIPTOR (6)
+    Descriptor Index: 0x02
+    bDescriptorType: STRING (0x03)
+    Language Id: English (United States) (0x0409)
+    wLength: 129
+
+No.     Time           Source                Destination           Protocol Length Info
+     96 18.119496      host                  3.3.0                 USBHID   43     SET_REPORT Request
+
+Frame 96: Packet, 43 bytes on wire (344 bits), 43 bytes captured (344 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0210
+    wIndex: 1
+    wLength: 7
+    Data Fragment: 10ff001e000039
+
+No.     Time           Source                Destination           Protocol Length Info
+     97 18.122306      3.3.0                 host                  USB      64     GET DESCRIPTOR Response STRING
+
+Frame 97: Packet, 64 bytes on wire (512 bits), 64 bytes captured (512 bits) on interface \\.\USBPcap3, id 0
+USB URB
+STRING DESCRIPTOR
+    bLength: 36
+    bDescriptorType: 0x03 (STRING)
+    bString: Gaming Mouse G402
+
+No.     Time           Source                Destination           Protocol Length Info
+     98 18.125308      3.3.0                 host                  USBHID   28     SET_REPORT Response
+
+Frame 98: Packet, 28 bytes on wire (224 bits), 28 bytes captured (224 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+     99 18.128291      3.3.2                 host                  USB      47     URB_INTERRUPT in
+
+Frame 99: Packet, 47 bytes on wire (376 bits), 47 bytes captured (376 bits) on interface \\.\USBPcap3, id 0
+USB URB
+HID Data: 11ff001e04023900000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    100 18.128306      host                  3.3.2                 USB      27     URB_INTERRUPT in
+
+Frame 100: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    101 18.128363      host                  3.3.0                 USBHID   43     SET_REPORT Request
+
+Frame 101: Packet, 43 bytes on wire (344 bits), 43 bytes captured (344 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0210
+    wIndex: 1
+    wLength: 7
+    Data Fragment: 10ff000e000300
+
+No.     Time           Source                Destination           Protocol Length Info
+    102 18.130309      3.3.0                 host                  USBHID   28     SET_REPORT Response
+
+Frame 102: Packet, 28 bytes on wire (224 bits), 28 bytes captured (224 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    103 18.133292      3.3.2                 host                  USB      47     URB_INTERRUPT in
+
+Frame 103: Packet, 47 bytes on wire (376 bits), 47 bytes captured (376 bits) on interface \\.\USBPcap3, id 0
+USB URB
+HID Data: 11ff000e02000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    104 18.133304      host                  3.3.2                 USB      27     URB_INTERRUPT in
+
+Frame 104: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    105 18.133428      host                  3.3.0                 USBHID   43     SET_REPORT Request
+
+Frame 105: Packet, 43 bytes on wire (344 bits), 43 bytes captured (344 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0210
+    wIndex: 1
+    wLength: 7
+    Data Fragment: 10ff021e000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    106 18.135306      3.3.0                 host                  USBHID   28     SET_REPORT Response
+
+Frame 106: Packet, 28 bytes on wire (224 bits), 28 bytes captured (224 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    107 18.138293      3.3.2                 host                  USB      47     URB_INTERRUPT in
+
+Frame 107: Packet, 47 bytes on wire (376 bits), 47 bytes captured (376 bits) on interface \\.\USBPcap3, id 0
+USB URB
+HID Data: 11ff021e00552020900300200000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    108 18.138305      host                  3.3.2                 USB      27     URB_INTERRUPT in
+
+Frame 108: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    109 18.138447      host                  3.3.0                 USBHID   43     SET_REPORT Request
+
+Frame 109: Packet, 43 bytes on wire (344 bits), 43 bytes captured (344 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0210
+    wIndex: 1
+    wLength: 7
+    Data Fragment: 10ff001e0000f3
+
+No.     Time           Source                Destination           Protocol Length Info
+    110 18.140306      3.3.0                 host                  USBHID   28     SET_REPORT Response
+
+Frame 110: Packet, 28 bytes on wire (224 bits), 28 bytes captured (224 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    111 18.143292      3.3.2                 host                  USB      47     URB_INTERRUPT in
+
+Frame 111: Packet, 47 bytes on wire (376 bits), 47 bytes captured (376 bits) on interface \\.\USBPcap3, id 0
+USB URB
+HID Data: 11ff001e0402f300000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    112 18.143303      host                  3.3.2                 USB      27     URB_INTERRUPT in
+
+Frame 112: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    113 18.143344      host                  3.3.0                 USBHID   43     SET_REPORT Request
+
+Frame 113: Packet, 43 bytes on wire (344 bits), 43 bytes captured (344 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0210
+    wIndex: 1
+    wLength: 7
+    Data Fragment: 10ff000e000500
+
+No.     Time           Source                Destination           Protocol Length Info
+    114 18.145306      3.3.0                 host                  USBHID   28     SET_REPORT Response
+
+Frame 114: Packet, 28 bytes on wire (224 bits), 28 bytes captured (224 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    115 18.148293      3.3.2                 host                  USB      47     URB_INTERRUPT in
+
+Frame 115: Packet, 47 bytes on wire (376 bits), 47 bytes captured (376 bits) on interface \\.\USBPcap3, id 0
+USB URB
+HID Data: 11ff000e03000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    116 18.148304      host                  3.3.2                 USB      27     URB_INTERRUPT in
+
+Frame 116: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    117 18.148410      host                  3.3.0                 USBHID   43     SET_REPORT Request
+
+Frame 117: Packet, 43 bytes on wire (344 bits), 43 bytes captured (344 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0210
+    wIndex: 1
+    wLength: 7
+    Data Fragment: 10ff032e000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    118 18.150306      3.3.0                 host                  USBHID   28     SET_REPORT Response
+
+Frame 118: Packet, 28 bytes on wire (224 bits), 28 bytes captured (224 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    119 18.153293      3.3.2                 host                  USB      47     URB_INTERRUPT in
+
+Frame 119: Packet, 47 bytes on wire (376 bits), 47 bytes captured (376 bits) on interface \\.\USBPcap3, id 0
+USB URB
+HID Data: 11ff032e03000000000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    120 18.153305      host                  3.3.2                 USB      27     URB_INTERRUPT in
+
+Frame 120: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    121 18.153460      host                  3.3.0                 USBHID   43     SET_REPORT Request
+
+Frame 121: Packet, 43 bytes on wire (344 bits), 43 bytes captured (344 bits) on interface \\.\USBPcap3, id 0
+USB URB
+Setup Data
+    bmRequestType: 0x21
+    bRequest: SET_REPORT (0x09)
+    wValue: 0x0210
+    wIndex: 1
+    wLength: 7
+    Data Fragment: 10ff001e00006e
+
+No.     Time           Source                Destination           Protocol Length Info
+    122 18.155303      3.3.0                 host                  USBHID   28     SET_REPORT Response
+
+Frame 122: Packet, 28 bytes on wire (224 bits), 28 bytes captured (224 bits) on interface \\.\USBPcap3, id 0
+USB URB
+
+No.     Time           Source                Destination           Protocol Length Info
+    123 18.158293      3.3.2                 host                  USB      47     URB_INTERRUPT in
+
+Frame 123: Packet, 47 bytes on wire (376 bits), 47 bytes captured (376 bits) on interface \\.\USBPcap3, id 0
+USB URB
+HID Data: 11ff001e04026e00000000000000000000000000
+
+No.     Time           Source                Destination           Protocol Length Info
+    124 18.158308      host                  3.3.2                 USB      27     URB_INTERRUPT in
+
+Frame 124: Packet, 27 bytes on wire (216 bits), 27 bytes captured (216 bits) on interface \\.\USBPcap3, id 0
+USB URB
